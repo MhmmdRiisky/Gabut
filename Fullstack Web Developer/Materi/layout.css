@@ -1,0 +1,54 @@
+*{
+       box-sizing: border-box;
+}
+body{
+       margin: 0;
+}
+
+.header{
+       background-image: url('demo2.jpg');
+       background-repeat: no-repeat;
+       background-position: center;
+       text-align: center;
+       color: aliceblue;
+       padding: 20px;
+}
+
+.navbar{
+       overflow: hidden;
+       background-color: rgb(86, 152, 199);
+       justify-content: center;
+       display: flex;
+}
+.navbar a{
+       float: left;
+       text-decoration: none;
+       padding:  14px 12px;
+       text-align: center;
+}
+.navbar a:hover{
+       background-color: aqua;
+       color: aliceblue;
+}
+.row{
+       float: left;
+       padding: 10px;
+}
+.column.side{
+       width: 25%;
+}
+.column.middle{
+       width: 50%;
+}
+
+.row::after{
+       content: "";
+       display: block;
+       clear: both;
+}
+
+.footer{
+       background-color: aqua;
+       padding: 10px;
+       text-align: center;
+}

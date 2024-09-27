@@ -1,0 +1,43 @@
+*{
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+}
+
+.clearfix:after{
+       content: "";
+       display: table;
+       clear: both;
+}
+
+.block-element {
+       background-color: aliceblue;
+       margin: 2px 0;
+       padding: 20px; /* salah satu syarat block element */
+       border: 1px solid rgb(63, 147, 222);
+       width: 100%; /*syarat lanjutan dari block element => tampilan penuh satu baris layar*/
+       }
+.nav.block-element{
+       float: left;
+       width:60% ;
+}
+
+.sidebar{
+       float: right;
+       width: 60%;
+}
+
+ .inline-element{
+       background-color: aliceblue;
+       padding: 2px 5px;
+       border: 1px solid rgb(63, 147, 222);
+       }
+.nav a{
+       color: blueviolet;
+       padding: 5px 10px;
+       border: 1px solid rgb(63, 147, 222);
+       background-color: aqua;
+       }
+nav a:hover{
+       text-decoration: none;
+       }
