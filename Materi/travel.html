@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Travel</title>
+       <link rel="stylesheet" href="form.css">
+</head>
+<body>
+       <h1 class="container">Form Pemesanan Tiket Trave</h1>
+       <form action="" method="post" class="form">
+              <label for="">Nama lengkap</label>
+              <input type="Name" name="name" id="name" required placeholder="Masukan nama">
+              <br><br>
+              <label for="">Alamat email</label>
+              <input type="email" name="email" id="email" required placeholder="Masukan email">
+              <br><br>
+              <label for="">Nomor Telpon</label>
+              <input type="phone" name="phone" id="phone" required placeholder="Masukan no Telpon">
+              <br><br>
+              <label for="">Rute perjalanan</label>
+              <select name="route" id="route">
+                     <option value="">pilih rute</option>
+                     <option value="Jakarta - Bima">Jakarta - Bima</option>
+                     <option value="bandung - Surabaya">bandung - Surabaya</option>
+                     <option value="jogyakarta - Jakarta">jogyakarta - Jakarta</option>
+              </select>
+              <br><br>
+              <!-- Tanggal Keberangkatan -->
+               <label for="departure-date">Tanggal Keberangkatan</label>
+               <input type="date" name="departure-date" id="departure-date">
+               <br><br>
+               <label for="departure-time">Waktu Keberangkatan</label>
+               <select name="departure-time" id="departure-time">
+                     <option value="">08:00</option>
+                     <option value="">10:00</option>
+                     <option value="">11:00</option>
+                     <option value="">16:00</option>
+               </select>
+               <br><br>
+               <label for="number">jumlah Penumpang</label>
+               <input type="number" name="number of passanger" id="number of passanger" min="10" max="40">
+               <br><br>
+               <label for="payment">Metode pembayaran</label>
+               <select name="" id="" placeholder="pilih Metode Pembayaran">
+                     <option value="payment">Debit</option>
+                     <option value="payment">QRIS</option>
+                     <option value="payment">Tunai</option>
+               </select>
+               <br><br>
+               <label for="">
+                     <input type="checkbox" name="checkbox" id="checkbox"> Saya Menyetujui persetujuan ini
+               </label>
+               <br><br>
+
+               <button type="submit">Pesan Tiket</button>
+               
+       </form>
+</body>
+</html>
