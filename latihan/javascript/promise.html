@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Contoh Asynchronous promises</title>
+</head>
+<body>
+       <!-- membuat testing untuk mengetahui API berhasil atau tidak  -->
+        <button onclick="fetcData()">testing Data API promise</button>
+        <h1 id="result"></h1>
+       <script>
+
+              function fetcData(){
+                     let promise = new Promise((resolve, reject) =>{
+                            setTimeout(() =>{
+                                   let success = true;
+                                   if(success){
+                                          resolve("Data berhasil di ambil")
+                                   }else{
+                                          reject("Data Terjadi Kesalahan")
+                                   }
+                     }, 20)
+                     });
+                     promise
+                     .then((massage) => {
+                            document.getElementById("result").innerText = massage;
+                     }) 
+                     .catch((error) => {
+                            documenet.getElementById("result").innerText = error;
+                     })
+              }
+       </script>
+</body>
+</html>

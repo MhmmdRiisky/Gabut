@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Belajar looping 2</title>
+</head>
+<body>
+       <table style="padding: 10; text-align: center; width: 100%;">
+              <thead>
+                     <tr>
+                            <th>No</th>
+                            <th>Nama</th>
+                            <th>Alamat</th>
+                     </tr>
+              </thead>
+              <tbody>
+                     <script>
+                            let warna, no;
+                            for(no = 1; no <=20; no++){
+                                   warna = (no % 2 == 0) ? 'yellow' : 'blue';
+                                   document.write(`<tr bgcolor="${warna}">
+                                          <td> ${no} </td>
+                                          <td>peserta ${no} </td>
+                                          <td>jl raya  ${no} </td>
+                                          </tr>`)
+                            }
+                     </script>
+              </tbody>
+       </table>
+       <script>
+
+       </script>
+</body>
+</html>

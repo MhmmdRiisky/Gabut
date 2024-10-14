@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+</head>
+<body>
+       <script>
+              let siswa = "Muhamad Risqi"
+              let nilai = 80;
+              let grade = "";
+              let predikat = "";
+
+              if(nilai > 85 && nilai <= 100) grade = "A";
+              else if (nilai > 60 && nilai <= 85) grade = "B";
+              else if (nilai > 50 && nilai <= 60) grade  = "C";
+              else if (nilai > 40 && nilai <= 50) grade = "D";
+              else if (nilai > 20 && nilai <= 40) grade = "E";
+              else (greade = "")
+
+
+              switch(grade){
+                     case "A" : predikat = "Sempurna"; break;
+                     case "B" : predikat = "Baik" ; break;
+                     case "C" : predikat = "CUkup"; break;
+                     case "D" : predikat = "Kurang"; break;
+                     case "E": predikat = "Buruk"; break;
+                     default: predikat =""; break;
+              }
+
+              document.write("siswa Bernama:" + siswa + "Dengan Nilai" + nilai + "grade:" + grade  + "predikat" + predikat)
+       </script>
+</body>
+</html>

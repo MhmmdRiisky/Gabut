@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+</head>
+<body>
+       <script>
+
+u
+
+              // if (produk == " TV"){
+              //        harsat = 3000000;
+              // }else if (produk == "kulkas"){
+              //        harsat = 400000;
+              // }else if (produk == "AC"){
+              //        harsat = 500000;
+              // }else{0
+              //        harsat = 0;
+              // }
+
+              // let harsat = 0; 
+              // switch(produk){
+              //        case "TV" : harsat = 300000;break;
+              //        case "kulkas" : harsat = 400000;break;
+              //        case "AC" : harsat = 500000;break;
+              //        default: harsat = 0;
+              // }
+              switch (produk) {
+        case "TV": harsat = 300000; break;
+        case "kulkas": harsat = 400000; break;
+        case "AC": harsat = 500000; break;
+        default: harsat = 0; break; // Menggunakan default untuk produk tidak dikenal
+    }
+
+
+              //Tentukan beli, total harga dan total diskon juka ada
+
+              let jmlBeli= 10;
+              let bruto = harsat * jmlBeli;
+              //buat ternary
+              let diskon = (produk == 'AC') ? 0.1 * bruto : 0;
+
+              document.write("Data pembelian" +
+                     "<br> Nama Pelanggan : " + pelanggan +
+                     "<br> Produk yang dipilih :" + produk +
+                     "<br> Harga Satuan: " + harsat +
+                     "<br> Harga Kotor (bruto) :" + bruto +
+                     "<br> total diskon: " + diskon
+              )
+       </script>
+</body>
+</html>

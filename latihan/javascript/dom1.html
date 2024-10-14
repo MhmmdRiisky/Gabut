@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+</head>
+<body>
+       <h1 id="judul">Selamat Datang di DOM HTML</h1>
+       <button onclick="ubahText()">Ubah Text</button>
+       
+       <h1 id="paragrafUtama">Contoh Ubah style</h1>
+       <button onclick="ubahGaya()">Ubah Gaya</button>
+       <hr>
+       
+       <div id="content">
+           <p id="paragraf">Ini adalah Paragraf</p>
+       </div>
+       <button onclick="tambahElement()">Tambah Paragraf</button>
+       <button onclick="hapusElement()">Hapus Element</button>
+       
+       <h1 id="size">MengUbah size font</h1>
+       <button onclick="ubahsize()">ubah</button>
+       <script>
+           function ubahText() {
+               document.getElementById("judul").innerText = "text telah di ubah"; 
+           }
+       
+           function ubahGaya() {
+               document.getElementById("paragrafUtama").style.color = "blue"; // Mengubah ID di sini
+               document.getElementById("paragrafUtama").style.fontSize = "20px"; 
+           }
+       
+           function tambahElement(){
+               let paragrafBaru = document.createElement("p");
+               paragrafBaru.innerHTML = "paragraf baru telah di tambah";
+               document.getElementById("content").appendChild(paragrafBaru);
+           }
+       
+           function hapusElement(){
+               let content = document.getElementById("content");
+               let paragraf = document.querySelector("p");
+       
+               // Memeriksa apakah paragraf ada di dalam content
+               if (paragraf) {
+                   content.removeChild(paragraf);
+               } else {
+                   alert("Paragraf tidak di temukan");
+               }
+           }
+
+           function ubahsize(){
+            document.getElementById("size").style.fontSize="30px";
+           }
+       </script>
+       
+       
+</body>
+</html>

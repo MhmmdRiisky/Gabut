@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+</head>
+<body>
+       <h1>Latihan function</h1>
+
+       <script>
+              function jumlah (a, b) {
+                     let c = a + b;
+                     return c;
+              }
+
+              let a = 10;
+              let b = 40;
+
+              document.write("Hasil Penjumlah" + a + "+" + b + " = " + jumlah(a, b) + "<br>");
+
+              //arrow function
+              const jumlahArrow = (x, y) => x + y;
+              let x = 40;
+              let y = 50;
+
+              document.write("Hasil penjulahan" + x + "+" + y + "=" + jumlahArrow(x,y) + "<br>");
+       </script>
+</body>
+</html>
